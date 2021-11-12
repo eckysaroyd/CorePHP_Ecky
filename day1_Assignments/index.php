@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.png">
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
 </head>
@@ -36,7 +37,7 @@
 						<button type="button" class="btn btn-default font-weight-bold pl-4 pr-4 pt-2 pb-2 " style= "background-color:#f7f6f2; border-radius: 30px; color: #2a7f85; border:0px;">SCHEDULE A CALL</button>
            				</p>
            			</div>
-           			<div class="col-md-6 image-responsive">
+           			<div class="col-md-6 image-responsive mediahead">
            				<img src="image2.jpg" alt="homepage" id="img1" class="image2">
            			</div>
            		</div>
@@ -77,7 +78,7 @@
  		<div class="col-md-6 image-responsive text-center">
  			<img src="image3.jpg" alt="homepage"  id="img1" class="pic1">
  		</div>
- 		<div class="col-md-6">
+ 		<div class="col-md-6 mediaBDY">
  			<h4 class="downHeaderFont font-weight-bold" style="font-family: 'Dancing Script', cursive; color: #1f7e84;"> Time To Make A Change</h3>
  			<h3 class="font-weight-bold fontBody">Don't Work Harder In <br>Your Market. Work Smarter </h3>
  			<p class="fontBody ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies metus eu urna blandit maximus. Nunc pharetra commodo urna sed vestibulum.Fusce ultricies metus eu urna blandit maximus. Nunc pharetra commodo urna sed vestibulum</p>
@@ -238,33 +239,40 @@
 	</div>
 </div>
  <!--       ###################### another container WHICH INCLUDE FORMS ############################### -->
-<div class="container-fluid top-space4" style="background-color: #2a7f85;">
+<div class="container-fluid top-space4 p-5" style="background-color: #2a7f85;">
 
-  	<div class="text-center">
+  	<div class="text-center pr-5 pl-5 pt-2 pb-2">
   		<h3 class="downHeaderFont line-height1" style="font-family: 'Dancing Script', cursive; color: #ffffff;"> Download Our Free Test</h3>
   		<h3 class="text-center fontBody line-height" style ="color: #ffffff;"> 3 Times Saving ways to Attract your dream Clients</h3>
-  		<div>
-  			<table class="table" width="70%" bgcolor="#f8f7f3">
-				  <tbody>
-				    <tr>
-				      <td><input type="text" class="form-control" id="fname" aria-describedby="fname" placeholder="First Name"></td>
-				      <td><input type="text" class="form-control" id="lname" aria-describedby="lname" placeholder="Last Name"></td>
-				      <td><input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email"></td>
-				      <td><button type = "button" class = "btn btn-default downHeaderFont pl-4 pr-4 pt-2 pb-2" style="font-family: 'Dancing Script', cursive; color: #1f7e84; background-color: #c9e2db; border:2px solid  #1f7e84; border-radius:70px;">Sign Up</button></td>
-				    </tr>
-				  </tbody>
-				  </table>
+  		<div class="form11 text-center p-5  mr-15">
+  			
+                  <form class="form-inline text-center">
+                          <div class="form-group mx-sm-3 mb-2">
+                            <label for="staticEmail2" class="sr-only">First name</label>
+                            <input type="text" class="form-control" id="staticEmail2" placeholder="First Name">
+                          </div>
+                          <div class="form-group mx-sm-3 mb-2">
+                            <label for="staticEmail2" class="sr-only">Last name</label>
+                            <input type="text" class="form-control" id="staticEmail2" placeholder="Last Name">
+                          </div>
+                          <div class="form-group mx-sm-3 mb-2">
+                            <label for="inputPassword2" class="sr-only">Password</label>
+                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                          </div>
+                      <button type="submit" class="btn btn-primary mb-2" style="font-family: 'Dancing Script', cursive; color: #1f7e84; background-color: #c9e2db; border:2px solid  #1f7e84; border-radius:70px;">Confirm identity</button>
+                  </form>
+
   	</div>
   </div>
   </div>
   <!-- one last before starting footer -->
-  <div class="container-fluid top-space2">
+  <div class="container-fluid top-space2 p-5">
 	  <div class="row">
-      <div class="col-md-12">
-        <h3 class="fontBody text-center"><strong>Well What Are You Waiting For?</strong></h3>
-
-        <center> <button type = "button pl-4 pr-4 pt-2 pb-2" class = "btn btn-default downHeaderFont" style="font-family: 'Dancing Script', cursive; color: #1f7e84; background-color: #c9e2db; max-width: 200px; border:2px solid  #1f7e84; border-radius:70px;">Schedule a call</button>
-        </center>
+      <div class="col-md-12 pt-5">
+        <h3 class="fontBody text-center font-weight-bold">Well What Are You Waiting For?</h3>
+       <div class="downHeaderFont text-center font-weight-bold pb-5">
+          <button type = "button pl-4 pr-4 pt-2 pb-2" class = "btn btn-default downHeaderFont " style="font-family: 'Dancing Script', cursive; color: #1f7e84; background-color: #c9e2db; max-width: 200px; border:2px solid  #1f7e84; border-radius:70px;">Schedule a call</button>
+        </div>
 
       </div>
     </div>

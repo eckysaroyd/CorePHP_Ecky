@@ -15,11 +15,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+ <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
 <!-- *******************--------------footer startedd=----------------********************  -->
 <footer>
-  <div class="container-fluid top-space4">
+  <div class="container-fluid top-space4 ">
     <div class="row">
       <div class="col-md-4 downFooterColors  text-center">
         <h3 class="downFooterColors"><strong class="downFooterFont"> Mimosa</strong><br>Consolting</h3>

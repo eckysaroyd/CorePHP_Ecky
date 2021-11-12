@@ -119,7 +119,7 @@
 	   	 	max-width: 70%;
 	   	 }
 
-	 /*  	 footer-styesheet*/
+	 /*  ####################################3	 footer-styesheet ############################## */
 	 .downFooterFont
 		{
 			font-family: 'Dancing Script', cursive;
@@ -139,8 +139,10 @@
 		a:hover {
         color: #ffffff;
         text-decoration: none;
+
 		}
 
+/*#######################    other in body footeter    #######################-->*/
 		.pic2
 		{
 			border-radius: 50%;
@@ -161,9 +163,20 @@
 		{
 			line-height: 1.6;	
 		}
-		.ml-15{
-			margin-left: -50px;
+		.mr-15{
+			margin-right: 150px;
 		}
+		.form11
+		{
+			background-color: #f7f6f2;
+		}
+		pr-10
+		{
+			padding-right: 20px;
+		}
+
+/*
+######################    ------- MEDIA QUERY FOOTER -------------   ###########################*/
 		/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -180,8 +193,42 @@
   	text-align: center;
 
   }
+  #img1.mediahead
+  {
+  	width: auto;
+  	text-align: center;
+  	padding-top: 50px;
+  }
+  h4.mediaBDY
+  {
+  	width: auto;
+  	text-align: center;
+  	padding-top: 20px;
+  	padding-bottom: 30px;
+  }
+   h3.mediaBDY
+   {
+   	font-size: 22px;
+   	text-align: center;
+   }
+   p.mediaBDY
+   {
+   	font-size: 20px;
+   	text-align: center;
+   }
+   p.div3
+   {
+   	padding: 2px;
+   	font-size: 20px;
+   	text-align: center;
+   }
+   h4.div3
+   {
+   	padding: 2px;
+   	font-size: 15px;
+   	
+   }
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
  
