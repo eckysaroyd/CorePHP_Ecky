@@ -39,6 +39,9 @@ $query=mysqli_query($conn,$sql);
 <link rel="icon" type="image/x-icon" href="favicon.png">
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery1.js"></script>
 </head>
 <body>
    <!--       ###################### adding students data --  ############################### -->
@@ -47,9 +50,9 @@ $query=mysqli_query($conn,$sql);
     <div class="text-center pr-5 pl-5 pt-2 pb-2">
       <h3 class="downHeaderFont line-height1" style="font-family: 'Dancing Script', cursive; color: #ffffff;"> STUDENT INFO</h3>
       <h3 class="text-center fontBody line-height" style ="color: #ffffff;">KINDLY ADD YOUR STUDENT INFORMATION</h3>
-      <div class="form11 text-center p-5  mr-15">
+      <div class="form11 text-center p-5">
         
-                  <form class="form-inline-flex text-center" method="post">
+                  <form class="form-inline-flex text-center" method="post" onclick="submitForm()">
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="staticEmail2" class="sr-only">First name</label>
                             <input type="text" name="fname" class="form-control" id="staticEmail2 fname" placeholder="First Name">
@@ -60,15 +63,15 @@ $query=mysqli_query($conn,$sql);
                           </div>
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="staticEmail2" class="sr-only">Email</label>
-                            <input type="text" class="form-control" name="email" id="staticEmail2" placeholder="Email">
+                            <input type="email" class="form-control" name="email" id="staticEmail2 email" placeholder="Email">
                           </div>
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="inputPassword2" class="sr-only">Contact</label>
-                            <input type="text" name="contactno" class="form-control" id="inputPassword2 contactno" placeholder="Contact">
+                            <input type="number" name="contactno" class="form-control" id="inputPassword2 contactno" placeholder="Contact">
                           </div>
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="staticEmail2" class="sr-only">Address</label>
-                             <textarea name="Address" class="form-control" id="staticEmail2 address" placeholder="Enter Your Address" rows="3"></textarea>
+                             <textarea name="Address" class="form-control" id="staticEmail2 Address" placeholder="Enter Your Address" rows="3"></textarea>
                           </div>
                       <button type="submit" name="submit" class="btn btn-primary p-3 mb-3 font-weight-bold" style="font-family: 'Dancing Script', cursive; color: #1f7e84; background-color: #c9e2db; border:2px solid  #1f7e84; border-radius:70px;" id="submit">Register Now</button>
                   </form>
@@ -140,7 +143,15 @@ if($result)
     </div>
   </div>
 </div>
-<!-- ############# - fetching data container ending -  ############### -->
+<!-- ############# - clear submited data in form-  ############### -->
 
+<script type="text/javascript">
+  function submitForm() {
+
+   var frm = document.getElementsByName('contact-form')[0];
+   frm.submit();
+   frm.reset();
+   return false;
+</script>
 </body>
 </html>

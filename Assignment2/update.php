@@ -1,3 +1,33 @@
+<?php
+ include 'conn.php';
+      $id=$_GET['id'];
+      $sql="select * from student where id='$id'";
+      $result=mysqli_query($conn,$sql);
+      $row=mysqli_fetch_array($result);
+if(isset($_POST['update']))
+{
+  $fname=$_POST['fname'];
+  $lname=$_POST['lname'];
+  $email=$_POST['email'];
+  $contactno=$_POST['contactno'];
+  $Address=$_POST['Address'];
+  $query="UPDATE student SET fname='$fname', lname='$lname', email='$email',  contactno='$contactno', Address='$Address' WHERE id='$id'";
+  $run_query = mysqli_query($conn,$query);
+  if($run_query)
+  {
+    echo"<script>alert('UPDATED SUCCSESSFULLY')
+
+    </script>"; 
+    // window.location.href='formlogin.php';
+    //THERE AN ERROR WITH HEADER FILE HERE.
+    header('location:formlogin.php');
+  }
+  else
+  {
+    echo mysqli_error($conn);
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head><title>My Form</title>
@@ -17,6 +47,9 @@
 <link rel="icon" type="image/x-icon" href="favicon.png">
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery1.js"></script>
 </head>
 <body>
    <!--       ###################### adding students data --  ############################### -->
@@ -25,19 +58,13 @@
     <div class="text-center pr-5 pl-5 pt-2 pb-2">
       <h3 class="downHeaderFont line-height1" style="font-family: 'Dancing Script', cursive; color: #ffffff;"> STUDENT INFO</h3>
       <h3 class="text-center fontBody line-height" style ="color: #ffffff;">KINDLY ADD YOUR STUDENT INFORMATION</h3>
-      <div class="form11 text-center p-5  mr-15">
+      <div class="form11 text-center p-5">
         
-                  <form class="form-inline-flex text-center" method="post">
+                  <form class="form-inline-flex text-center" method="post" onclick="submitForm()">
                       <!-- #################### updating data that are inserted ################## -->
-                       <?php
-                        include 'conn.php';
-                        $id=$_GET['id'];
-                        $sql="select * from student where id='$id'";
-                        $result=mysqli_query($conn,$sql);
-                        $row=mysqli_fetch_array($result);
-                        ?>
+                       
                          <!-- ########## updating data are saved ############## -->
-                          <div class="form-group mx-sm-3 mb-2">
+                          <div class="form-group mx-sm-3 mb-2 ">
                             <label for="staticEmail2" class="sr-only">First name</label>
                             <input type="text" name="fname" class="form-control" id="staticEmail2 fname" placeholder="First Name" value="<?php echo $row['fname']; ?>">
                           </div>
@@ -47,40 +74,20 @@
                           </div>
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="staticEmail2" class="sr-only">Email</label>
-                            <input type="text" class="form-control" name="email" id="staticEmail2" placeholder="Email" value="<?php echo $row['email']; ?>">
+                            <input type="email" class="form-control" name="email" id="staticEmail2 email" placeholder="Email" value="<?php echo $row['email']; ?>">
                           </div>
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="inputPassword2" class="sr-only">Contact</label>
-                            <input type="text" name="contactno" class="form-control" id="inputPassword2 contactno" placeholder="Contact" value="<?php echo $row['contactno']; ?>">
+                            <input type="number" name="contactno" class="form-control" id="inputPassword2 contactno" placeholder="Contact" value="<?php echo $row['contactno']; ?>">
                           </div>
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="staticEmail2" class="sr-only">Address</label>
-                             <textarea name="Address" class="form-control" id="staticEmail2 address" placeholder="Enter Your Address" rows="3"><?php echo $row['Address']; ?></textarea>
+                             <textarea name="Address" class="form-control" id="staticEmail2 Address" placeholder="Enter Your Address" rows="3"><?php echo $row['Address']; ?></textarea>
                           </div>
                       <button type="submit" name="update" class="btn btn-primary p-3 mb-3 font-weight-bold" style="font-family: 'Dancing Script', cursive; color: #FFFFFF; background-color: #c90000; border:2px solid  #1f7e84; border-radius:70px;" id="button">Update It now</button>
                       <!-- ##################### php code for setting updates ############# -->
                   
-                  <?php
-                  if(isset($_POST['update']))
-                  {
-                    $fname=$_POST['fname'];
-                    $lname=$_POST['lname'];
-                    $email=$_POST['email'];
-                    $contactno=$_POST['contactno'];
-                    $Address=$_POST['Address'];
-                    $query="UPDATE student SET fname='$fname', lname='$lname', email='$email',  contactno='$contactno', Address='$Address' WHERE id='$id'";
-                    $run_query = mysqli_query($conn,$query);
-                    if($run_query)
-                    {
-                      echo"<script>alert('UPDATED SUCCSESSFULLY')</script>"; //THERE AN ERROR WITH HEADER FILE HERE.
-                      //header('location:formlogin.php');
-                    }
-                    else
-                    {
-                      echo mysqli_error($conn);
-                    }
-                  }
-                  ?>
+
                    <!-- ##################### php code for ending update ############# -->
                   </form>
     </div>
@@ -151,6 +158,15 @@ if($result)
     </div>
   </div>
 </div>
-<!-- ##################################### - fetching data container ending -  ######################### -->
+<!-- ############# - clear submited data in form-  ############### -->
+
+<script type="text/javascript">
+  function submitForm() {
+
+   var frm = document.getElementsByName('contact-form')[0];
+   frm.submit();
+   frm.reset();
+   return false;
+</script>
 </body>
 </html>
