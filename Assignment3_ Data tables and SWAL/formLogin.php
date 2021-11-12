@@ -39,9 +39,7 @@ $query=mysqli_query($conn,$sql);
 <link rel="icon" type="image/x-icon" href="favicon.png">
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="jquery1.js"></script>
+<link rel="stylesheet" type="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 </head>
 <body>
    <!--       ###################### adding students data --  ############################### -->
@@ -91,8 +89,9 @@ $query=mysqli_query($conn,$sql);
       </div>
       <div class="col-md-8">
           <!-- ----------  START TABLE HERE ----------   -->
-          <table class="table table-sm">
-  <thead>
+        <!--   <table class="table table-sm" id="example"> -->
+           <table id="example" class="display" style="width:100%">
+        <thead>
     <tr>
       <th scope="col">#ID</th>
       <th scope="col">First Name</th>
@@ -152,6 +151,15 @@ if($result)
    frm.submit();
    frm.reset();
    return false;
+
+   $(document).ready(function() {
+    $('#example').DataTable();
+} );
 </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script type="https://code.jquery.com/jquery-3.5.1.js" src="jquery.js"></script>
 </body>
 </html>
