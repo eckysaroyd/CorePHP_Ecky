@@ -121,7 +121,7 @@ if($result)
       <td><?php echo $ab['email']; ?></td>
       <td><?php echo $ab['contactno']; ?></td>
       <td><?php echo $ab['Address']; ?></td>
-      <td class="edit"> <a  class="edit" href="update.php?id=<?php echo $ab['id'];?>">edit</a></td>
+      <td class="edit"> <a class="edit" href="update.php?id=<?php echo $ab['id'];?>">edit</a></td>
       <td class="delete"> <a class="delete" href="delete.php?id=<?php echo $ab['id'];?>">delete</a></td>
     </tr>
     <?php
@@ -151,13 +151,13 @@ if($result)
    frm.submit();
    frm.reset();
    return false;
-
+}
    $(document).ready(function() {
     $('#example').DataTable();
 } );
 </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 <script type="https://code.jquery.com/jquery-3.5.1.js" src="jquery.js"></script>
