@@ -1,0 +1,278 @@
+	
+/**************************HEADER CSS STYLE********************************/
+.header1
+		{
+			background-color: #2a7f85;
+			color: #ffffff;
+			font-family: 'Quicksand', sans-serif;
+
+		}
+.container-fluid
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 90px;
+	padding-right: 70px;
+}
+.headerPaddingLeft
+{
+	padding-left: 40px;
+}
+
+.leftHead
+{
+	padding-top: 70px;
+	
+}
+.image2
+{
+	width: 70%;
+
+}
+.topDownMargin
+{
+	margin-bottom: 50px;
+}
+.top-space2
+		{
+         padding-top: 70px;
+         padding-bottom: 60px;
+		}
+.pic1
+{
+	width: 50%;
+	border-radius: 100%;
+}
+.topDownPadding1
+{
+	padding-left: 90px;
+}
+	#img1
+		{
+			border-radius: 70%;
+
+		}
+
+		
+		.div1
+		{
+			background-color:#cbe2da;
+			color:  #326460;	
+		}
+		
+		.top-space3
+		{
+		background-color:#f8f7f3;
+         padding-top: 30px;
+         padding-bottom: 50px;
+		}
+		.top-space4
+		{
+		background-color:#2a7f85;
+         padding-top: 30px;
+         padding-bottom: 50px;
+		}	
+		.top-space5
+		{
+		background-color:#ffffff;
+         padding-top: 70px;
+         padding-bottom: 90px;	
+
+		}
+		.downHeaderFont
+		{
+			font-family: 'Dancing Script', cursive;
+			color: #1f7e84;
+		}
+		.fontBody
+		{
+			font-family: 'Quicksand', sans-serif;
+		}
+
+		.div2
+		{
+			background-color:#2a7f85;
+			border: 0px;
+			color:  #ffffff;	
+		}
+		.div3
+		{
+			color:  #ffffff;
+			padding: 5px;
+		}
+		.top-space6
+		{
+		background-color:#f8f7f3;
+         padding-top: 30px;
+         padding-bottom: 30px;
+		}
+		.top-rightIMG
+		 {
+		  position: absolute;
+		  top: 8px;
+		  left: 16px;
+	   	 }
+	   	 #img3
+	   	 {
+	   	 	
+	   	 	max-height: auto;
+	   	 	max-width: 70%;
+	   	 }
+
+	 /*  ####################################3	 footer-styesheet ############################## */
+	 .downFooterFont
+		{
+			font-family: 'Dancing Script', cursive;
+			color: #ffffff;
+		} 
+		.downFooterColors
+		{
+			color: #ffffff;
+			font-family: 'Quicksand', sans-serif;
+		}
+
+	/*	.a1
+		{
+			color: #ffffff;
+			text-decoration: underline;
+		}
+		a:hover {
+        color: #ffffff;
+        text-decoration: none;
+
+		}*/
+
+/*#######################    other in body footeter    #######################-->*/
+		.pic2
+		{
+			border-radius: 50%;
+			width: 50%;
+			min-height:80px;
+		}
+		.pic3
+		{
+			border-radius: 50%;
+			width: 40%;
+			min-height:80px;
+		}
+		.line-height
+		{
+			line-height: 2.6;
+		}
+		.line-height
+		{
+			line-height: 1.6;	
+		}
+		.mr-15{
+			margin-right: 150px;
+		}
+		.form11
+		{
+			background-color: #f7f6f2;
+		}
+		pr-10
+		{
+			padding-right: 20px;
+		}
+
+/*
+######################    ------- MEDIA QUERY FOOTER -------------   ###########################*/
+		/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  h1.headerPaddingLeft{
+  	font-size: 20px;
+  }
+  p.headerPaddingLeft
+  {
+  	font-size: 16px;
+  }
+  button.headerPaddingLeft
+  {
+  	width: auto;
+  	text-align: center;
+
+  }
+  #img1.mediahead
+  {
+  	width: auto;
+  	text-align: center;
+  	padding-top: 50px;
+  }
+  h4.mediaBDY
+  {
+  	width: auto;
+  	text-align: center;
+  	padding-top: 20px;
+  	padding-bottom: 30px;
+  }
+   h3.mediaBDY
+   {
+   	font-size: 22px;
+   	text-align: center;
+   }
+   p.mediaBDY
+   {
+   	font-size: 20px;
+   	text-align: center;
+   }
+   p.div3
+   {
+   	padding: 2px;
+   	font-size: 20px;
+   	text-align: center;
+   }
+   h4.div3
+   {
+   	padding: 2px;
+   	font-size: 15px;
+   	
+   }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ 
+}
+
+
+
+/* ##########css for my edit and delete buttons ############ */
+   .edit
+		{
+			color: #0000FF;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.edit:hover {
+        color: 	#008000;
+        text-decoration: underline;
+
+		}
+
+		.delete
+		{
+			color: 	#FF0000;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.edit:hover {
+        color: 	#008000;
+        text-decoration: underline;
+
+		}
+
