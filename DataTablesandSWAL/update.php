@@ -1,18 +1,26 @@
 <?php
-include 'conn.php';
-if(isset($_POST['submit']))
+ include 'conn.php';
+      $id=$_GET['id'];
+      $sql="select * from student where id='$id'";
+      $result=mysqli_query($conn,$sql);
+      $row=mysqli_fetch_array($result);
+if(isset($_POST['update']))
 {
   $fname=$_POST['fname'];
   $lname=$_POST['lname'];
   $email=$_POST['email'];
   $contactno=$_POST['contactno'];
   $Address=$_POST['Address'];
-  
-$sql="insert into student(fname,lname,email,contactno,Address) values('$fname','$lname','$email','$contactno','$Address')";
-$query=mysqli_query($conn,$sql);
-  if($query)
+  $query="UPDATE student SET fname='$fname', lname='$lname', email='$email',  contactno='$contactno', Address='$Address' WHERE id='$id'";
+  $run_query = mysqli_query($conn,$query);
+  if($run_query)
   {
-    echo"<script>alert('REGISTRATION SUCCSESSFULLY')</script>";
+    echo"<script>alert('UPDATED SUCCSESSFULLY')
+
+    </script>"; 
+    // window.location.href='formlogin.php';
+    //THERE AN ERROR WITH HEADER FILE HERE.
+    header('location:formlogin.php');
   }
   else
   {
@@ -26,6 +34,9 @@ $query=mysqli_query($conn,$sql);
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -35,11 +46,10 @@ $query=mysqli_query($conn,$sql);
 <link href="style.css" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="favicon.png">
 
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" type="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
-<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery1.js"></script>
 </head>
 <body>
    <!--       ###################### adding students data --  ############################### -->
@@ -50,28 +60,35 @@ $query=mysqli_query($conn,$sql);
       <h3 class="text-center fontBody line-height" style ="color: #ffffff;">KINDLY ADD YOUR STUDENT INFORMATION</h3>
       <div class="form11 text-center p-5">
         
-                  <form class="form-inline-flex text-center" method="post" onClick="submitForm()">
-                          <div class="form-group mx-sm-3 mb-2">
+                  <form class="form-inline-flex text-center" method="post" onclick="submitForm()">
+                      <!-- #################### updating data that are inserted ################## -->
+                       
+                         <!-- ########## updating data are saved ############## -->
+                          <div class="form-group mx-sm-3 mb-2 ">
                             <label for="staticEmail2" class="sr-only">First name</label>
-                            <input type="text" name="fname" class="form-control fname" id="staticEmail2" placeholder="First Name" required>
+                            <input type="text" name="fname" class="form-control fname" id="staticEmail2" placeholder="First Name" value="<?php echo $row['fname']; ?>" required>
                           </div>
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="staticEmail2" class="sr-only">Last name</label>
-                            <input type="text" name="lname" class="form-control lname" id="staticEmail2" placeholder="Last Name" required>
+                            <input type="text" name="lname" class="form-control lname" id="staticEmail2" placeholder="Last Name" value="<?php echo $row['lname']; ?>" required>
                           </div>
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="staticEmail2" class="sr-only">Email</label>
-                            <input type="email" class="form-control email" name="email" id="staticEmail2 " placeholder="Email">
+                            <input type="email" class="form-control email" name="email" id="staticEmail2" placeholder="Email" value="<?php echo $row['email']; ?>" required>
                           </div>
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="inputPassword2" class="sr-only">Contact</label>
-                            <input type="number" name="contactno" class="form-control contactno" id="inputPassword2" placeholder="Contact" required>
+                            <input type="number" name="contactno" class="form-control contactno" id="inputPassword2" placeholder="Contact" value="<?php echo $row['contactno']; ?>" required>
                           </div>
                           <div class="form-group mx-sm-3 mb-2">
                             <label for="staticEmail2" class="sr-only">Address</label>
-                             <textarea name="Address" class="form-control Address" id="staticEmail2" placeholder="Enter Your Address" rows="3" required></textarea>
+                             <textarea name="Address" class="form-control Address" id="staticEmail2" placeholder="Enter Your Address" rows="3" required><?php echo $row['Address']; ?></textarea>
                           </div>
-                      <button type="submit" name="submit" class="btn btn-primary p-3 mb-3 font-weight-bold buttonn" style="font-family: 'Dancing Script', cursive; color: #1f7e84; background-color: #c9e2db; border:2px solid  #1f7e84; border-radius:70px;" id="submit">Register Now</button>
+                      <button type="submit" name="update" class="btn btn-primary p-3 mb-3 font-weight-bold" style="font-family: 'Dancing Script', cursive; color: #FFFFFF; background-color: #c90000; border:2px solid  #1f7e84; border-radius:70px;" id="button">Update It now</button>
+                      <!-- ##################### php code for setting updates ############# -->
+                  
+
+                   <!-- ##################### php code for ending update ############# -->
                   </form>
     </div>
   </div>
@@ -85,12 +102,12 @@ $query=mysqli_query($conn,$sql);
       <h3  class="downHeaderFont text-center font-weight-bold line-height1" style="font-family: 'Dancing Script', cursive; color: #1f7e84;"> HERE IS OUR STUDENTS NAMES </h3>
     </div>
       <div class="row">
-      
-      <div class="col-md-12">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
           <!-- ----------  START TABLE HERE ----------   -->
-        <!--   <table class="table table-sm" id="example"> -->
-           <table id="example" class="display" style="width:100%">
-        <thead>
+          <table class="table table-sm">
+  <thead>
     <tr>
       <th scope="col">#ID</th>
       <th scope="col">First Name</th>
@@ -121,10 +138,7 @@ if($result)
       <td><?php echo $ab['contactno']; ?></td>
       <td><?php echo $ab['Address']; ?></td>
       <td class="edit"> <a class="edit" href="update.php?id=<?php echo $ab['id'];?>">edit</a></td>
-      <td class="delete">
-        <button  class="delete" id ="swaal" onclick="myfunction(<?php echo $ab['id'];?>)">Delete</button>
-       <!-- <a class="delete" href="delete.php?id=?php echo $ab['id'];?>">delete</a> -->
-     </td>
+      <td class="delete"> <a class="delete" href="delete.php?id=<?php echo $ab['id'];?>">delete</a></td>
     </tr>
     <?php
   }
@@ -140,67 +154,19 @@ if($result)
 </table>
 <!-- ---------- ENDING TABLE HERE --------------  -->
     </div>
-    
+    <div class="col-md-2">
+    </div>
   </div>
 </div>
 <!-- ############# - clear submited data in form-  ############### -->
 
 <script type="text/javascript">
-  function myfunction() {
+  function submitForm() {
 
    var frm = document.getElementsByName('contact-form')[0];
    frm.submit();
    frm.reset();
    return false;
-  }
-  // ************* data table button ********
-     $(document).ready(function() {
-      $('#example').DataTable();
-  } );
-  // ******** swal button ******
-  // function myFunction(){
-  // {
-  //     alert("i am here");
-  //   
-  //   // document.getElementById("swaal").style.color = "blue";
-  // }
 </script>
-
-
-<script>
-  function myfunction(){
-  swal({
-  title: "Are you sure?",
-  text: "Once deleted, you will not be able to recover this imaginary file!",
-  icon: "warning",
-  buttons: true,
-  dangerMode: true,
-})
-.then((willDelete) => {
-  if (willDelete) {
-    swal("Poof! Your imaginary file has been deleted!", {
-      icon: "success",
-    });
-  } else {
-    swal("Your imaginary file is safe!");
-  }
-});
-}
-
-$("#tbUser").on('click', '.btnDelete', function () {
-    $(this).remove();
-});
-  </script>
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
-
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
-<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-
 </body>
 </html>
