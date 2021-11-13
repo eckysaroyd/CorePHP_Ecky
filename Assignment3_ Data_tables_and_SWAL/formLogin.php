@@ -169,27 +169,31 @@ if($result)
 </script>
 
 
-<script type="text/javascript">
+<script>
   function myfunction(){
-    alert("I am here");
-    swal({
-      title: "Are you sure?",
-      text: "Once deleted, you will not be able to recover this imaginary file!",
-      icon: "warning",
-      buttons: true,
-      dangerMode: true,
-    })
-    .then((willDelete) => {
-      if (willDelete) {
-        swal("Poof! Your imaginary file has been deleted!", {
-          icon: "success",
-        });
-      } else {
-        swal("Your imaginary file is safe!");
-      }
+  swal({
+  title: "Are you sure?",
+  text: "Once deleted, you will not be able to recover this imaginary file!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("Poof! Your imaginary file has been deleted!", {
+      icon: "success",
     });
+  } else {
+    swal("Your imaginary file is safe!");
   }
-</script>
+});
+}
+
+$("#tbUser").on('click', '.btnDelete', function () {
+    $(this).remove();
+});
+  </script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 

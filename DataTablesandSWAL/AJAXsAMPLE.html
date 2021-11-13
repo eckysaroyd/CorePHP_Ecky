@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	
+	<!-- Importing the jQuery -->
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+</head>
+
+<script>
+	function makePUTrequest() {
+		$.ajax({
+			url: 'test.html',
+			type: 'PUT',
+			success: function (result) {
+				// Do something with the result
+			}
+		});
+	}
+
+	function makeDELETErequest() {
+		$.ajax({
+			url: 'test.html',
+			type: 'DELETE',
+			success: function (result) {
+				// Do something with the result
+			}
+		});
+	}
+</script>
+
+<body>
+	<button onclick="makePUTrequest()">
+		Click for PUT request
+	</button>
+	<button onclick="makeDELETErequest()">
+		Click for DELETE request
+	</button>
+</body>
+
+</html>
+<!-- var id="<?php echo $ab['id'];?>";
+$.ajax({
+  type:"get",
+  data:id,
+  url:"delete.php",
+  cache:false,
+  success:function(html){
+    console.log('SUCCSESS',html); 
+    var exp = html.split("#");
+    //console.log(exp);
+    if(exp[0].trim() =="yes"){
+      //console.log("Request Send");
+    }else{
+        console.log("something wrong");
+    }
+  }
+}); -->
