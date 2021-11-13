@@ -100,7 +100,7 @@ $query=mysqli_query($conn,$sql);
         var resp =split.response("#")
           if(resp[0] =="1"){
             swal('Deleted!', "This record and it`s details are permanantly deleted!");
-            jQuery("#getStudentRecords").html(resp[0]);
+            jQuery("#getStudentRecords").html(resp[1]);
           }
          else{
             swal('Oops...', 'Something went wrong with ajax !', 'error');

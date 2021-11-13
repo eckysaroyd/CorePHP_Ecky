@@ -49,7 +49,7 @@ if(isset($_POST['update']))
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="jquery1.js"></script>
+
 </head>
 <body>
    <!--       ###################### adding students data --  ############################### -->
@@ -162,11 +162,11 @@ if($result)
 
 <script type="text/javascript">
   function submitForm() {
-
    var frm = document.getElementsByName('contact-form')[0];
    frm.submit();
    frm.reset();
    return false;
+ }
 </script>
 </body>
 </html>

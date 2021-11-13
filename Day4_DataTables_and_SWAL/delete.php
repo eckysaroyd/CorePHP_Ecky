@@ -4,7 +4,7 @@ $id=$_POST['id'];
 //echo $id;
 $sql="delete from student where id='$id'";
 $result=mysqli_query($conn,$sql);
-if($result){
+if(mysqli_num_rows($result)){
 	$html ='';
 	$eck="select * from student";
 	$result=mysqli_query($conn,$eck);
