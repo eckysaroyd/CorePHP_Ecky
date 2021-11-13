@@ -1,5 +1,5 @@
 $(document).ready(function(){
-$('button').click(function(){
+$('#submit').click(function(){
 var fname=$.trim($('.fname').val());
 var lname=$.trim($('.lname').val());
 var email=$.trim($('.email').val());

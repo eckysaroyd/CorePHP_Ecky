@@ -269,10 +269,12 @@
 			color: 	#FF0000;
 			text-decoration: none;
 			font-weight: bold;
+			border: 0px;
 		}
 		.edit:hover {
         color: 	#008000;
         text-decoration: underline;
+        border: 0px ;
 
 		}
 
