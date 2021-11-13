@@ -33,57 +33,50 @@ $query=mysqli_query($conn,$sql);
 </head>
 <body>
 		<table class="table" id="tbUser">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Email</th>
-      <th scope="col">Contact</th>
-      <th scope="col">Address</th>
-      <th scope="col">Edit</th>
-      <th scope="col">Delete</th>
-    </tr>
-  </thead>
-  <!-- ## php codes for fetching data, editing and deleting it  ## -->
-				  <?php
-				include "conn.php";
-				$eck="select * from student";
-				$result=mysqli_query($conn,$eck);
-				if($result)
-				{
-				  while($ab=mysqli_fetch_array($result))
-				  {
-				 ?>
-  <tbody>
-    <tr class="btnDelete">
-       <tr>
-      <td><?php echo $ab['id']; ?></td>
-      <td><?php echo $ab['fname']; ?></td>
-      <td><?php echo $ab['lname']; ?></td>
-      <td><?php echo $ab['email']; ?></td>
-      <td><?php echo $ab['contactno']; ?></td>
-      <td><?php echo $ab['Address']; ?></td>
-      <td class="edit"> <a class="edit" href="update.php?id=<?php echo $ab['id'];?>">edit</a></td>
-      <td class="delete">
-      	 <!-- <a class="delete" href="delete.php?id=?php echo $ab['id'];?>">delete</a> -->
-        <button  class="delete" id ="swaal" onclick="myfunction(<?php echo $ab['id'];?>)">Delete</button>
-       <!-- <a class="delete" id ="swaal" href="delete.php?id=?php echo $ab['id'];?>">delete</a> -->
-     </td>
-    </tr>
-		      <?php
-			  }
-			  ?>
-    </tr>
-  </tbody>
-				  	<?php
-				    }
-				    else
-				    {
-				    echo mysqli_error($conn);
-				    }
-				    ?>
-</table>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Email</th>
+          <th scope="col">Contact</th>
+          <th scope="col">Address</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="getStudentRecords">
+
+          <!-- ## php codes for fetching data, editing and deleting it  ## -->
+			  <?php
+  				include "conn.php";
+  				$eck="select * from student";
+  				$result=mysqli_query($conn,$eck);
+  				if(mysqli_num_rows($result))
+  				{
+  				  while($ab=mysqli_fetch_array($result))
+  				  {
+  			  ?>
+          <tr class="btnDelete">
+            <td><?php echo $ab['id']; ?></td>
+            <td><?php echo $ab['fname']; ?></td>
+            <td><?php echo $ab['lname']; ?></td>
+            <td><?php echo $ab['email']; ?></td>
+            <td><?php echo $ab['contactno']; ?></td>
+            <td><?php echo $ab['Address']; ?></td>
+            <td class="edit"> <a class="edit" href="update.php?id=<?php echo $ab['id'];?>">edit</a></td>
+            <td class="delete"> <button  class="delete" id ="swaal" onclick="myfunction(<?php echo $ab['id'];?>)">Delete</button>
+            </td>
+          </tr>
+  		    <?php }	
+          }else{
+          ?>
+          <tr>
+           <td colspan="8" class="text-center">No Record Found</td> 
+          </tr>
+        <?php } ?>
+      </tbody>
+    </table>
 <script>
 	function myfunction(id){
 	swal({
@@ -103,25 +96,17 @@ $query=mysqli_query($conn,$sql);
          dataType: 'json',
       
       success:function(response){
-        alert(response);
-          if(response =="1"){
+        // alert(response);
+        var resp =split.response("#")
+          if(resp[0] =="1"){
             swal('Deleted!', "This record and it`s details are permanantly deleted!");
+            jQuery("#getStudentRecords").html(resp[0]);
           }
          else{
             swal('Oops...', 'Something went wrong with ajax !', 'error');
          }
-         //readProducts();
       }
       })
-      // .fail(function(){
-         
-      // });
-
- /*  Ajax code will be here  */
-    // swal("Poof! Your imaginary file has been deleted!", {
-    //   icon: "success",
-    // });
-      
         
       
   } 
@@ -141,5 +126,6 @@ $(document).on('click', '#delete_product', function(e){
    e.preventDefault();
 });
 	</script>
+
 </body>
 </html>
