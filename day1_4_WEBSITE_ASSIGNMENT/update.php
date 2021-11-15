@@ -1,6 +1,6 @@
 <?php
- include 'conn.php';
-      $userid=$_GET['userid'];
+   include 'conn.php';
+      $userid=$_GET['id'];
       $sql="select * from employee where userid='$userid'";
       $result=mysqli_query($conn,$sql);
       $row=mysqli_fetch_array($result);
@@ -31,7 +31,7 @@ if(isset($_POST['update']))
 }
 ?>
 <?php
- include 'conn.php';
+ 
   session_start();
   $fname=$_SESSION['fname'];
 ?>
@@ -42,6 +42,7 @@ if(isset($_POST['update']))
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
             <!-- BOOSTRAP CDN -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
