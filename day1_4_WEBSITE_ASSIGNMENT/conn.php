@@ -1,7 +1,7 @@
-<? php
-$conn = muysqli_connect("localhost","root","","");
-if(!conn)
-{
-	die('could not connected to the database'.mysqlierror());
-}
+<?php
+$conn = mysqli_connect('localhost','root','','eckyprotolabz');
+if(!$conn)
+	{
+	die('could not connect to database'.mysqli_connect_error());
+	}
 ?>

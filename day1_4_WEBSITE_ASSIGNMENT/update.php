@@ -1,12 +1,44 @@
 <?php
  include 'conn.php';
+      $userid=$_GET['userid'];
+      $sql="select * from employee where userid='$userid'";
+      $result=mysqli_query($conn,$sql);
+      $row=mysqli_fetch_array($result);
+if(isset($_POST['update']))
+{
+  $efname=$_POST['efname'];
+  $elname=$_POST['elname'];
+  $econtact=$_POST['econtact'];
+  $eemail=$_POST['eemail'];
+  $eaddress=$_POST['eaddress'];
+  $esalary=$_POST['esalary'];
+  $status=$_POST['status'];
+  $query="UPDATE employee SET efname='$efname', elname='$elname', econtact='$econtact',eemail='$eemail',  eaddress='$eaddress', esalary='$esalary',status='status' WHERE userid='$userid'";
+  $run_query = mysqli_query($conn,$query);
+  if($run_query)
+  {
+    echo"<script>alert('UPDATED SUCCSESSFULLY')
+
+    </script>"; 
+    // window.location.href='formlogin.php';
+    //THERE AN ERROR WITH HEADER FILE HERE.
+    header('location:homepage.php');
+  }
+  else
+  {
+    echo mysqli_error($conn);
+  }
+}
+?>
+<?php
+ include 'conn.php';
   session_start();
   $fname=$_SESSION['fname'];
 ?>
 <!DOCTYPE html>
 <html>
-	<head>
-		 <title>cvv</title>
+  <head>
+     <title>cvv</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
             <!-- BOOSTRAP CDN -->
@@ -21,8 +53,8 @@
      <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
      <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js">
 
-  		//MATERIAL DESIGN ICONIC FONT ###  //
-  		  <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+      //MATERIAL DESIGN ICONIC FONT ###  //
+        <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 
           // <!-- STYLE CSS -->
           <link rel="stylesheet" href="css/style.css">
@@ -32,15 +64,15 @@
 
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  		//<!--STYLE CSS -->
+      //<!--STYLE CSS -->
       <a href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet">
-  		<link rel="stylesheet" href="css/style.css">
-  		<script type="text/javascript" src="jquery.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <script type="text/javascript" src="jquery.js"></script>
         <!-- swal css -->
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	</head>
+  </head>
 
-	<body>
+  <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
       <a class="navbar-brand" href="#">home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -117,35 +149,35 @@
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="fname">fname</label>
-                          <input type="text" class="form-control" name="efname" id="fname" placeholder="fname">
+                          <input type="text" class="form-control" name="efname" id="fname" placeholder="fname" value="<?php echo $row['efname']; ?>" required>
                         </div>
                         <div class="form-group col-md-6">
                           <label for="lname">lname</label>
-                          <input type="text" class="form-control" name="elname" id="lname" placeholder="lname">
+                          <input type="text" class="form-control" name="elname" id="lname" placeholder="lname" value="<?php echo $row['elname']; ?>" required>
                         </div>
                       </div>
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="fname">Contact</label>
-                          <input type="contact" class="form-control" name="econtact" id="Contact" placeholder="Contact">
+                          <input type="contact" class="form-control" name="econtact" id="Contact" placeholder="Contact" value="<?php echo $row['econtact']; ?>" required> 
                         </div>
                         <div class="form-group col-md-6">
                           <label for="lname">Email</label>
-                          <input type="email" class="form-control" name="" id="eemail" placeholder="Email">
+                          <input type="email" class="form-control" name="" id="eemail" placeholder="Email"  value="<?php echo $row['eemail']; ?>" required>
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" name="eaddress" id="inputAddress" placeholder="1234 Main St">
+                        <input type="text" class="form-control" name="eaddress" id="inputAddress" placeholder="1234 Main St" value="<?php echo $row['eaddress']; ?>" required>
                       </div>
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="inputCity">Salary</label>
-                          <input type="text" class="form-control" name="esalary" id="Salary">
+                          <input type="text" class="form-control" name="esalary" id="Salary" value="<?php echo $row['esalary']; ?>" required>
                         </div>
                         <div class="form-group col-md-4">
                           <label for="inputState">Status</label>
-                          <select id="inputState" name="status" class="form-control">
+                          <select id="inputState" name="status" class="form-control"  value="<?php echo $row['status']; ?>" required>
                             <option selected>Active</option>
                             <option>Deactive</option>
                           </select>

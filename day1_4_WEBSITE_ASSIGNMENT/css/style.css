@@ -256,3 +256,15 @@ margin-top:15px;
 padding:10px;
 font-size:20px;
 }
+.sub1
+{
+  color: #59595b;
+  text-decoration: none;
+  text-align: right;
+  padding: 5px;
+}
+.editbtn
+{
+  color: white; 
+  background-color: #0a6cdb;
+}

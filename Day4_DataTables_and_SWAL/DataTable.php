@@ -21,7 +21,7 @@
                 <th>Salary</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="getStudentRecords">
             <tr>
                 <td>Tiger Nixon</td>
                 <td>System Architect</td>
