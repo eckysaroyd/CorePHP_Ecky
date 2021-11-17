@@ -14,8 +14,10 @@ if(isset($_POST['update']))
     $esalary=$_POST['esalary'];
     $status=$_POST['status'];
 
- $query ="UPDATE employee SET efname='$efname', elname='$elname', econtact='$econtact',eemail='$eemail',  eaddress='$eaddress', esalary='$esalary',status='status' WHERE userid='$userid'";
+    
+ $query ="UPDATE employee SET efname='$efname', elname='$elname', econtact='$econtact',eemail='$eemail',  eaddress='$eaddress', esalary='$esalary',status='$status' WHERE userid='$userid'";
 $run_query = mysqli_query($conn,$query);
+
 
   if($run_query)
     {

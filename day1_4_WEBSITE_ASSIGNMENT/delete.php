@@ -2,9 +2,10 @@
 include'conn.php';
 $userid=$_POST['userid'];
 //echo $userid;
-$sql="DELETE from employee WHERE userid='$userid'";
-$result=mysqli_query($conn,$sql);
-if(mysqli_num_rows($result)){
+//$sql="DELETE from employee WHERE userid='$userid'";
+//$result=mysqli_query($conn,$sql);
+$result=1;
+if($result){
     $html ='';
     $eck="select * from employee";
     $result=mysqli_query($conn,$eck);
@@ -30,8 +31,8 @@ if(mysqli_num_rows($result)){
           </tr>';
     }
 
-    echo "1"."#".$html;
+    echo "1#".$html;
 }else{
-    echo "0";
+    echo "0#";
 }
 ?>

@@ -1,8 +1,4 @@
-<?php
- include 'conn.php';
-  session_start();
-  $fname=$_SESSION['fname'];
-?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -160,7 +156,7 @@
                             Check me out
                           </label>
                         </div>
-                        <div class="mr-5"><button type="submit" class="btn btn-primary" name="empREG" data-dismiss="modal">Add New</button></div>
+                        <div class="mr-5"><button type="submit" class="btn btn-primary" name="empREG">Add New</button></div>
                       </div>
                       
                     </form>
@@ -200,8 +196,8 @@
                     <tbody id="getStudentRecords">
                       <?php
                           
-                          $eck="select * from employee";
-                          $result=mysqli_query($conn,$eck);
+                          $sql="select * from employee where userid='$Edituserid'";
+                          $result=mysqli_query($conn,$sql);
                           if(mysqli_num_rows($result))
                           {
                             while($ab=mysqli_fetch_array($result))
@@ -296,7 +292,7 @@
                     swal('Oops...', 'Something went wrong with ajax !', 'error');
                  }
               }
-              })
+              }),
                 
               
           } 

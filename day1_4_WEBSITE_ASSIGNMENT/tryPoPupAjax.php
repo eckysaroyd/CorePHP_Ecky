@@ -1,10 +1,11 @@
 <?php
+// ..........  insert into database code .................
  include 'conn.php';
   session_start();
-  $fname=$_SESSION['fname'];
+  //$fname=$_SESSION['fname'];
 
   if(isset($_POST['empREG']))
-  {
+  { 
     $efname=$_POST['efname'];
     $elname=$_POST['elname'];
     $econtact=$_POST['econtact'];
@@ -12,6 +13,7 @@
     $eaddress=$_POST['eaddress'];
     $esalary=$_POST['esalary'];
     $status=$_POST['status'];
+    
 
     
   $sql="INSERT into employee(efname,elname,econtact,eemail,eaddress,esalary,status) values('$efname','$elname','$econtact','$eemail','$eaddress','$esalary','$status')";
@@ -24,6 +26,40 @@
     {
       echo mysqli_error($conn);
     }
+  }
+  
+       //..........  update to lldatabase code ................
+      // $Edituserid=$_GET['id'];
+      // $sql="select * from employee where userid='$Edituserid'";
+      // $result=mysqli_query($conn,$sql);
+      // $row=mysqli_fetch_array($result);
+if(isset($_POST['update']))
+  {
+    
+    $Edituserid=$_POST['userid'];
+    $aefname=$_POST['aefname'];
+    $aelname=$_POST['aelname'];
+    $aecontact=$_POST['aecontact'];
+    $aeemail=$_POST['aeemail'];
+    $aeaddress=$_POST['aeaddress'];
+    $aesalary=$_POST['aesalary'];
+    $aestatus=$_POST['aestatus'];
+
+    
+ $query ="UPDATE employee SET efname='$aefname', elname='$aelname', econtact='$aecontact',eemail='$aeemail',  eaddress='$aeaddress', esalary='$aesalary',status='$aestatus' WHERE userid='$Edituserid'";
+$run_query = mysqli_query($conn,$query) or die(mysqli_error($conn));
+
+
+  if($run_query)
+    {
+      echo"<script>alert('UPDATED SUCCSESSFULLY')</script>"; 
+
+          
+    }
+    else
+        {
+          echo mysqli_error($conn);
+        }
   }
 ?>
 <!DOCTYPE html>
@@ -83,7 +119,8 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <b class="nav-link" ><?php echo $fname; ?></b>
+            <b class="nav-link" ></b>
+            <!-- echo $fname -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="regform.php">Add Admin</a>
@@ -141,7 +178,7 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                   <label for="lname">Email</label>
-                                  <input type="email" class="form-control" name="" id="eemail" placeholder="Email">
+                                  <input type="email" class="form-control" name="eemail" id="eemail" placeholder="Email">
                                 </div>
                               </div>
                               <div class="form-group">
@@ -156,8 +193,8 @@
                                 <div class="form-group col-md-4">
                                   <label for="inputState">Status</label>
                                   <select id="inputState" name="status" class="form-control">
-                                    <option selected>Active</option>
-                                    <option>Deactive</option>
+                                    <option id="1" name="active">Active</option>
+                                    <option id="0"> Inactive</option>
                                   </select>
                                 </div>
                                 <div class="form-group col-md-2">
@@ -170,7 +207,7 @@
                                     Check me out
                                   </label>
                                 </div>
-                                <div class="mr-5"><button type="submit" class="btn btn-primary" name="empREG" data-dismiss="modal">Add New</button></div>
+                                <div class="mr-5"><button type="submit" class="btn btn-primary" name="empREG">Add New</button></div>
                               </div>
                             </form>
                           </div>
@@ -223,11 +260,23 @@
                           <td> <?php echo $ab['eemail']; ?></td>
                          
                           <td> <?php echo $ab['esalary']; ?></td>
-                          <td> <?php echo $ab['status']; ?></td>
+                          <td> 
+                            <?php    
+                                if($ab['status'] == 1)
+                                    {
+                                    echo 'Active';
+                                    }
+                                  else
+                                    {
+                                      echo 'Inactive';
+                                    }
+                              ?>
+                                
+                          </td>
                           <td class="edit"> <button id="edit-record" class="edit btn btn-success" onclick="edit_record(<?php echo $ab['userid']; ?>)">Edit</button>
                          <button  class="delete btn btn-danger" id ="swaal" onclick="myfunction(<?php echo $ab['userid'];?>)">Delete</button>
                           </td>
-                          <
+                          
                       </tr>
                           <?php
                            } 
@@ -272,57 +321,8 @@
             </div>
             
             <!-- Modal body -->
-            <div class="modal-body">
-              <form method="post">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="aefname">fname</label>
-                    <input type="text" class="form-control" name="aefname" id="aefname" placeholder="fname">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="aelname">lname</label>
-                    <input type="text" class="form-control" name="aelname" id="aelname" placeholder="lname">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="contact">Contact</label>
-                    <input type="contact" class="form-control" name="aecontact" id="aecontact" placeholder="Contact">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="lname">Email</label>
-                    <input type="email" class="form-control" name="aeemail" id="aeemail" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress">Address</label>
-                  <input type="text" class="form-control" name="aeaddress" id="aeaddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputCity">Salary</label>
-                    <input type="text" class="form-control" name="aesalary" id="aesalary">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState">Status</label>
-                    <select id="aestatus" name="aestatus" class="form-control">
-                      <option id="1">Active</option>
-                      <option id="0">Deactive</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-2">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
-                  <div class="mr-5"><button type="submit" class="btn btn-primary" name="update"  id="update" data-dismiss="modal">Update Employee</button></div>
-                </div>
-              </form>
+            <div class="modal-body update-emp">
+              
             </div>
               
           </div>
@@ -361,87 +361,25 @@
                   success: function(dataResult){
                     var resp = dataResult.split("#");
                     if(resp[0]!='no'){
-                      var res_data=JSON.parse(resp[1]);
+                      // var res_data=JSON.parse(resp[1]);
                       //alert(res_data["efname"]);
-                        $('#aefname').val(res_data["efname"]);
-                        $('#aelname').val(res_data["elname"]);
-                        $('#aecontact').val(res_data["econtact"]);
-                        $('#aeemail').val(res_data["eemail"]);
-                        $('#aeaddress').val(res_data["eaddress"]);
-                        $('#aesalary').val(res_data["esalary"]);
-                        $('#aestatus').val(res_data["status"]);
+                        $('.update-emp').html(resp[1]);
+                        // $('#aefname').val(res_data["efname"]);
+                        // $('#aelname').val(res_data["elname"]);
+                        // $('#aecontact').val(res_data["econtact"]);
+                        // $('#aeemail').val(res_data["eemail"]);
+                        // $('#aeaddress').val(res_data["eaddress"]);
+                        // $('#aesalary').val(res_data["esalary"]);
+                        // $('#aestatus').val(res_data["status"]);
                         $("#myModal-17").modal('show');
                     }else{
                       alert("No Data");
                     }
 
-
-                   
                   }
-                   // if( success:function(response))
-                   // {
-                   //  $("#myModal-17").modal('show');
-                   //  }
-                   //  else
-                   //  {
-                   //    alert("not passed data through ajax");
-                   //  }
-                    
+                   
                       });
              }
-                    // $(function () {
-                    //   $('#myModal-17').on('show.bs.modal', function (event) {
-                    //     var mydataFetch = $(event.relatedTarget);
-                    //     var userid = mydataFetch.data('userid ');
-                    //     var efname = mydataFetch.data('efname');
-                    //     var elname = mydataFetch.data('elname');
-                    //     var econtact = mydataFetch.data('econtact');
-                    //     var eemail = mydataFetch.data('eemail');
-                    //     var eaddress = mydataFetch.data('eaddress');
-                    //     var esalary = mydataFetch.data('esalary');
-                    //     var status = mydataFetch.data('status');
-                    //     var mymodal1 = $(this);
-                    //     mymodal1.find('#aefname').val(efname);
-                    //     mymodal1.find('#aelname').val(elname);
-                    //     mymodal1.find('#aecontact').val(econtact);
-                    //     mymodal1.find('#aeemail').val(eemail);
-                    //     mymodal1.find('#aeaddress').val(eaddress);
-                    //     mymodal1.find('#aesalary').val(esalary);
-                    //     mymodal1.find('#aestatus').val(status);
-                    //   })
-                    // });
-                    //update data using ajax
-              // $(document).on("click", "#update", function() { 
-              //       $.ajax({
-              //             url: "update.php",
-              //             type: "POST",
-              //             cache: false,
-              //             data:{
-              //                   userid: $('#aserid').val(),
-              //                   efname: $('#aefname').val(),
-              //                   elname: $('#aelname').val(),
-              //                   econtact: $('#aecontact').val(),
-              //                   eemail: $('#aeemail').val(),
-              //                   eaddress: $('#aeaddress').val(),
-              //                   esalary: $('#aesalary').val(),
-              //                   status: $('#aestatus').val(),
-              //                 },
-              //              success: function(dataResult){
-              //                   var dataResult = JSON.parse(dataResult);
-              //                   if(dataResult.statusCode==200)
-              //                   {
-              //                   $('#myModal-17').modal().hide();
-              //                   alert('Data updated successfully !');
-              //                   location.reload();          
-              //               }
-              //            }
-              //           });
-              //         });
-              //       });
-     
-
-
-
      // let start swal buttons and AJAX
           function myfunction(userid){
           swal({
@@ -459,10 +397,9 @@
                  type: 'POST',
                  data: {userid:userid},
                  dataType: 'json',
-              
-              success:function(response){
+               success:function(response){
                 // alert(response);
-                var resp =split.response("#")
+                var resp =response.split("#")
                   if(resp[0] =="1"){
                     swal('Deleted!', "This record and it`s details are permanantly deleted!");
                     jQuery("#getStudentRecords").html(resp[1]);
@@ -470,6 +407,10 @@
                  else{
                     swal('Oops...', 'Something went wrong with ajax !', 'error');
                  }
+              },
+              error:function(response){
+              
+                  alert("Im in Error");
               }
               })
                 
