@@ -292,7 +292,8 @@
                     swal('Oops...', 'Something went wrong with ajax !', 'error');
                  }
               }
-              }),
+               setInterval('location.reload()', 7000); 
+              })
                 
               
           } 

@@ -1,9 +1,9 @@
 <?php
 include'conn.php';
 $userid=$_POST['userid'];
-//echo $userid;
-//$sql="DELETE from employee WHERE userid='$userid'";
-//$result=mysqli_query($conn,$sql);
+echo $userid;
+$sql="DELETE from employee WHERE userid='$userid'";
+$result=mysqli_query($conn,$sql);
 $result=1;
 if($result){
     $html ='';
