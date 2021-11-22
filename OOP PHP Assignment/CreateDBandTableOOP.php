@@ -11,7 +11,7 @@ if($conn->connect_error)
 	}
 
 //begginning of New SQL Table
-	$sql = "CREATE TABLE newoop(id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,fname VARCHAR(20) NOT NULL, lname VARCHAR(20) NOT NULL, email VARCHAR(20) NOT NULL, password VARCHAR(20) NOT NULL, reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)";
+	$sql = "CREATE TABLE salary(id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY, EmployeeName VARCHAR(20) NOT NULL, salary VARCHAR(20) NOT NULL, status INT(5) NOT NULL, reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)";
 	if($conn->query($sql)=== TRUE)
 	{
 		echo "TABLE WAS CREATED SUCCESSFULLY!";
@@ -21,5 +21,7 @@ if($conn->connect_error)
 		{
 			echo "WE HAVE ERROR IN CREATING TABLE". $conn->error;
 		}
+	
+
 $conn->close();
 ?>
