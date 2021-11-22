@@ -32,7 +32,7 @@ switch($days)
 }
 
 }
-;?>
+?>
 <!DOCTYPE html>
 <html>
 <head>

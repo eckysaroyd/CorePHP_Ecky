@@ -1,6 +1,4 @@
 <?php
-  $x="";
-  $y="";
 for($x=0; $x<=5; $x++)
 {
   for($y=0; $y<=$x; $y++)
@@ -9,17 +7,22 @@ for($x=0; $x<=5; $x++)
   }
   echo"<br>";
 }
+ echo"<br></br>";
+echo "echo 'PHP version: ' ". phpversion(). "</br></br>";
+
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <title>NEW ADDED FORM</title>
-</head>
-<body>
-</body>
-</html>
+
+<?php
+class simple{
+
+  public $k = 9;
+
+  public function display(){
+    return $this->k;
+  }
+}
+
+$obj = new simple();
+echo $obj->display();
+
+?>
