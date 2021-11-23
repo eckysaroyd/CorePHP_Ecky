@@ -1,6 +1,6 @@
 <?php
 class myCode{
-	const MYLEARNINGCOURSE= "I'm a fullstack web Developer Using PhP Knowledge";
+	const MYLEARNINGCOURSE= "I'm a fullstack web Developer Using PHP Knowledge";
 
 	function course()
 	{
