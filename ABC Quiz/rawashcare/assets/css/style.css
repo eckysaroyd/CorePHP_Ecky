@@ -1,0 +1,2350 @@
+/**** --- ABOUT PAGE CSS END --- ******/
+
+
+/*banner section*/
+
+.abt-banner {
+    background-image: url("../img/Banner@2x.png");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: bottom;
+}
+
+
+/*about section*/
+
+section.about {
+    background-color: #FBFAF6;
+}
+
+h4.about_info {
+    padding: 60px 5px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+
+h2.about_quote {
+    font-weight: 900;
+    float: left;
+    font-family: 'Lato', sans-serif;
+}
+
+img.quote_symbol {
+    padding-top: 0px;
+    padding-bottom: 23px;
+    padding-right: 0px;
+    float: right;
+}
+
+p.img-signature {
+    text-align: center;
+    padding-top: 10px;
+    font-size: -webkit-xxx-large;
+}
+
+img.about_signature {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 14px;
+}
+
+
+/*second banner section*/
+
+.about_2baner {
+    background-image: url("../img/group18.JPG");
+    background-color: #FBFAF6;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: bottom;
+}
+
+
+/*special section*/
+
+h2.about_special {
+    font-weight: 900;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.special_row {
+    margin-bottom: 5px;
+    /*text-align: center;*/
+}
+
+img.special_symbol {
+    float: right;
+    max-width: 43%;
+    margin: 0px;
+}
+
+p.special_content {
+    margin: 0px;
+    margin-bottom: 0px;
+    float: left;
+    font-size: 20px;
+    padding-top: 2px;
+}
+
+h5.content-info.about {
+    font-weight: 900;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*products section*/
+
+.product_about {
+    max-width: 448px;
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 552px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 27px 9px;
+        font-weight: 500;
+        font-family: 'Lato', sans-serif;
+        font-size: 19px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 25px;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 10px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 21%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 7%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 778px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 44px;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 28px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 48%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 17px;
+        padding-top: 6px;
+    }
+    adding-top: 10px;
+}
+
+h5.content-info.about {
+    font-weight: 900;
+    margin-top: 39px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+}
+
+h5.card-title.card-product.about {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0px;
+    text-align: center;
+}
+
+span.card-text.card-product.about {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0px;
+    text-align: center;
+}
+
+span.card-text.card-product.product-content.about {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0px;
+    text-align: center;
+}
+
+h4.text-muted.card-product.about {
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.btn.btn-product.about {
+    border-radius: 0px;
+    padding: 7px 19px;
+    font-size: 16px;
+}
+
+
+}
+
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 436px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 27px 9px;
+        font-weight: 500;
+        font-family: 'Lato', sans-serif;
+        font-size: 19px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 25px;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 10px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 21%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 7%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 634px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 44px;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 28px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 69%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 17px;
+        padding-top: 10px;
+    }
+    adding-top: 10px;
+}
+h5.content-info.about {
+    font-weight: 900;
+    margin-top: 39px;
+    text-align: center;
+    font-family: 'Lato',
+    sans-serif;
+    font-size: 23px;
+}
+h5.card-title.card-product.about {
+    font-family: 'Lato',
+    sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0px;
+    text-align: center;
+}
+span.card-text.card-product.about {
+    font-family: 'Lato',
+    sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0px;
+    text-align: center;
+}
+span.card-text.card-product.product-content.about {
+    font-family: 'Lato',
+    sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0px;
+    text-align: center;
+}
+h4.text-muted.card-product.about {
+    font-size: 17px;
+    font-family: 'Lato',
+    sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+.btn.btn-product.about {
+    border-radius: 0px;
+    padding: 7px 19px;
+    font-size: 16px;
+}
+
+}
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 436px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 25px 5px;
+        font-weight: 500;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 22px;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 10px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 21%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 18%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 610px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 44px;
+        text-align: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 28px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 100%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    h5.content-info.about {
+        font-weight: 900;
+        margin-top: 0px;
+        text-align: center;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 23px;
+    }
+    h5.card-title.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.product-content.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product.about {
+        font-size: 17px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    .btn.btn-product.about {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 343px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 25px 5px;
+        font-weight: 500;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 22px;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 10px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 21%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 18%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 459px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 44px;
+        text-align: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 28px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 100%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 17px;
+        padding-top: 6px;
+    }
+    h5.content-info.about {
+        font-weight: 900;
+        margin-top: 0px;
+        text-align: center;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 19px;
+    }
+    h5.card-title.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.product-content.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product.about {
+        font-size: 17px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    .btn.btn-product.about {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 721px) and (max-width: 767px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 326px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 25px 5px;
+        font-weight: 500;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 22px;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 10px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 21%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 18%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 459px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 44px;
+        text-align: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 28px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 100%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 17px;
+        padding-top: 6px;
+    }
+    h5.content-info.about {
+        font-weight: 900;
+        margin-top: 0px;
+        text-align: center;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 19px;
+    }
+    h5.card-title.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.product-content.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product.about {
+        font-size: 17px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    .btn.btn-product.about {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 720px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 276px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 25px 5px;
+        font-weight: 500;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 22px;
+        margin: 0px;
+        padding: 0px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 21%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 18%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 393px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 19px;
+        text-align: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 22px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 83%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 17px;
+        padding-top: 6px;
+    }
+    h5.content-info.about {
+        font-weight: 900;
+        margin-top: 0px;
+        text-align: center;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 19px;
+    }
+    h5.card-title.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.product-content.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product.about {
+        font-size: 17px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    .btn.btn-product.about {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 568px) and (max-width: 600px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 257px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 25px 5px;
+        font-weight: 500;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 22px;
+        margin: 0px;
+        padding: 0px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 21%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 18%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 355px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 19px;
+        text-align: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 22px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 83%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 17px;
+        padding-top: 6px;
+    }
+    h5.content-info.about {
+        font-weight: 900;
+        margin-top: 0px;
+        text-align: center;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 19px;
+    }
+    h5.card-title.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.product-content.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product.about {
+        font-size: 17px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    .btn.btn-product.about {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 567px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 222px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 25px 5px;
+        font-weight: 500;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 16px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 18px;
+        margin: 0px;
+        padding: 0px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 21%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 23%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 312px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 19px;
+        text-align: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 20px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 83%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 16px;
+        padding-top: 6px;
+    }
+    h5.content-info.about {
+        font-weight: 900;
+        margin-top: 0px;
+        text-align: center;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 19px;
+    }
+    h5.card-title.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.product-content.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product.about {
+        font-size: 16px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    .btn.btn-product.about {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 480px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 195px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 40px 5px;
+        font-weight: 500;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 15px;
+        margin: 0px;
+        padding: 0px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 21%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 19%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 268px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 19px;
+        text-align: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 20px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 83%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 14px;
+        padding-top: 6px;
+    }
+    h5.content-info.about {
+        font-weight: 900;
+        margin-top: 8px;
+        text-align: center;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 16px;
+    }
+    h5.card-title.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.product-content.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product.about {
+        font-size: 14px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    .btn.btn-product.about {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 381px) and (max-width: 420px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 165px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 60px 5px;
+        font-weight: 500;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 13px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        margin: 0px;
+        padding: 0px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 21%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 19%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 233px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 19px;
+        text-align: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 18px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 75%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 12px;
+        padding-top: 6px;
+    }
+    h5.content-info.about {
+        font-weight: 900;
+        margin-top: 11px;
+        text-align: center;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+    }
+    h5.card-title.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.product-content.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product.about {
+        font-size: 12px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    .btn.btn-product.about {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 380px) {
+    .abt-banner {
+        background-image: url(../img/Banner@2x.png);
+        background-color: #cccccc;
+        height: 134px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h4.about_info {
+        padding: 60px 5px;
+        font-weight: 500;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+    }
+    h2.about_quote {
+        font-weight: 900;
+        float: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        margin: 0px;
+        padding: 0px;
+    }
+    img.quote_symbol {
+        padding-top: 0px;
+        float: right;
+        max-width: 19%;
+        margin: 0px;
+    }
+    .col-2.col-xs-2.col-sm-2.col-md-2.col-lg-2.quote {
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-10.col-xs-10.col-sm-10.col-md-10.col-lg-10.quote {
+        margin: 0px;
+        padding: 0px;
+        padding: 0px 10px;
+    }
+    img.about_signature {
+        text-align: center;
+        width: 19%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .about_2baner {
+        background-image: url(../img/group18.JPG);
+        background-color: #FBFAF6;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h2.about_special {
+        font-weight: 900;
+        margin-top: 19px;
+        text-align: left;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 18px;
+    }
+    img.special_symbol {
+        float: right;
+        max-width: 70%;
+        margin: 0px;
+    }
+    p.special_content {
+        margin: 0px;
+        margin-bottom: 0px;
+        float: left;
+        font-size: 11px;
+        padding-top: 2px;
+    }
+    h5.content-info.about {
+        font-weight: 900;
+        margin-top: 11px;
+        text-align: center;
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+    }
+    h5.card-title.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 9px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    span.card-text.card-product.product-content.about {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product.about {
+        font-size: 10px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    .btn.btn-product.about {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 7px;
+    }
+}
+
+/**** --- BODY&HAND, BUNNDLE AND SHOP ALL PAGE CSS END --- ******/
+
+/* banner section css */
+.banner {
+    background-image: url("../img/group198.png");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: bottom;
+}
+h5.text-center.content-info {
+    text-align: center;
+    padding-top: 23px;
+}
+
+/* products section css */
+a.btn.btn-product {
+    background: #000000;
+    color: white;
+}
+.card.product-cards {
+    border: 0px !important;
+}
+h5.card-title.card-product {
+    font-family: 'Lato',
+    sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px;
+    text-align: center;
+}
+.card-product-content-text {
+    text-align: center;
+}
+span.card-text.card-product {
+    font-family: 'Lato',
+    sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px;
+    text-align: center;
+}
+.add-product-btn {
+    text-align: center;
+}
+span.card-text.card-product.product-content {
+    font-family: 'Lato',
+    sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+    text-align: center;
+}
+h4.text-muted.card-product {
+    font-size: 16px;
+    font-family: 'Lato',
+    sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+a.btn.btn-product {
+    border-radius: 0px;
+    padding: 7px 19px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.load_more_btn {
+    text-align: center;
+    margin-top: 28px;
+}
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+    /* banner section css */
+    .banner {
+        background-image: url("../img/group198.png");
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h5.text-center.content-info {
+        text-align: center;
+        padding-top: 23px;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 16px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 14px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* banner section css */
+    .banner {
+        background-image: url("../img/group198.png");
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    h5.text-center.content-info {
+        text-align: center;
+        padding-top: 23px;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 16px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 14px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .banner {
+        background-image: url(../img/group198.png);
+        background-color: #cccccc;
+        height: 414px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    .content-info {
+        padding-top: 37px;
+        font-size: 22px;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 12px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 10px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    .banner {
+        background-image: url(../img/group198.png);
+        background-color: #cccccc;
+        height: 414px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    .content-info {
+        padding-top: 37px;
+        font-size: 22px;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 12px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 10px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+@media only screen and (min-width: 721px) and (max-width: 767px) {
+    .banner {
+        background-image: url(../img/group198.png);
+        background-color: #cccccc;
+        height: 310px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    .content-info {
+        padding-top: 37px;
+        font-size: 20px;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 14px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 13px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 720px) {
+    .banner {
+        background-image: url(../img/group198.png);
+        background-color: #cccccc;
+        height: 310px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    .content-info {
+        padding-top: 37px;
+        font-size: 20px;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 14px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 13px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+@media only screen and (min-width: 568px) and (max-width: 600px) {
+    .banner {
+        background-image: url(../img/group198.png);
+        background-color: #cccccc;
+        height: 310px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    .content-info {
+        padding-top: 37px;
+        font-size: 20px;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 14px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 13px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 567px) {
+    .banner {
+        background-image: url(../img/group198.png);
+        background-color: #cccccc;
+        height: 288px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    .content-info {
+        padding-top: 25px;
+        font-size: 16px;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 12px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 10px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 480px) {
+    .banner {
+        background-image: url(../img/group198.png);
+        background-color: #cccccc;
+        height: 288px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    .content-info {
+        padding-top: 25px;
+        font-size: 16px;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 12px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 10px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+@media only screen and (min-width: 381px) and (max-width: 420px) {
+    .banner {
+        background-image: url(../img/group198.png);
+        background-color: #cccccc;
+        height: 235px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    .content-info {
+        padding-top: 21px;
+        font-size: 16px;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 12px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 10px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 380px) {
+    .banner {
+        background-image: url(../img/group198.png);
+        background-color: #cccccc;
+        height: 213px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom;
+    }
+    .content-info {
+        padding-top: 21px;
+        font-size: 15px;
+    }
+    h5.card-title.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    /* products section css */
+    a.btn.btn-product {
+        background: #000000;
+        color: white;
+    }
+    .card.product-cards {
+        border: 0px !important;
+    }
+    .card-product-content-text {
+        text-align: center;
+    }
+    span.card-text.card-product {
+        font-family: 'Lato',
+        sans-serif;
+        font-size:11px;
+        font-weight: 700;
+        margin: 0px;
+        text-align: center;
+    }
+    .add-product-btn {
+        text-align: center;
+    }
+    span.card-text.card-product.product-content {
+        font-family: 'Lato',
+        sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: center;
+    }
+    h4.text-muted.card-product {
+        font-size: 11px;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    a.btn.btn-product {
+        border-radius: 0px;
+        padding: 7px 19px;
+        font-size: 8px;
+    }
+    .load_more_btn {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+
+/**** --- BODY&HAND, BUNNDLE AND SHOP ALL PAGE CSS END --- ******/
